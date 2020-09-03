@@ -1,0 +1,81 @@
+/*Définir une fonte qui peut n'exiter pas sur l'ordinateur du visiteur. la fonte se trouve dans un dossier font*/
+/*Downloaded from https://www.fontsquirrel.com WOFF - Recommended, works in all modern browsers*/
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*sélecteur universel pour sélectionner toutes les balises*/
+* /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'robotoregular', Arial, sans-serif; /*indiquer au navigateur de choisir par ordre. Si une n'existe pas il 
+    													choisira la suivante.*/
+}
+
+/*toutes les balises h2 vont être affichées par les paramètres entre les acolades.
+		 On utilise "," pour appliquer le style à +ieurs balise*/
+body
+{
+	background-color: rgb(230, 244, 250); 
+	border: 3px rgb(230, 244, 250) solid;
+	border-radius: 10px;
+}
+h1
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 3em;
+	text-shadow: 5px 5px 5px black;
+}
+h2
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+p
+{
+	text-align: justify;
+}
+.job_title
+{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+.am_photo
+{
+	float: left;
+	border: 1px rgb(0, 0, 0) solid;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+.am_logo
+{
+	float: right;
+}
+.profil
+{
+	background-color: rgba(116, 81, 235,0.2); 
+	border: 3px rgba(116, 81, 235,0.2) solid;
+	border-radius: 10px;
+	box-shadow: 6px 6px 10px rgb(0, 0, 0);	
+}
+.info
+{
+	
+}
+.experience
+{
+	font-size: 1.5em;
+}
+a
+{
+	text-decoration: none;
+}

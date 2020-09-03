@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- indique que c'est une page web HTMl5-->
+<html>
+    <head> <!-- Donne des infos générales sur la page-->
+        <meta charset="utf-8" /><!-- indique la façon d'encodage du text. Comment s'affiche les caractères spéciaux-->
+        <link rel="stylesheet" href="style.css" /> <!-- lier le fichier CSS à cette page HTML -->
+        <title>My CV</title><!-- C'est le titre de la page il s'affiche dans l'onglet du navigateur-->
+    </head>
+
+    <body>
+		<h1>Abderrahmen MCHAYAA</h1> <!-- indique un titre important. h1 jusqu'à h6. Mais en général on utimlise h1 h2 et h3--> 
+			<!-- insérer une image avec un lien vers une image plus grande. les atributs src et alt sont indispensables. title pour info bulle. Il faut tjrs insérer une image dans un paragraphe-->
+		<p class="am_photo"> <a href="image/my_photo.jpg" target="_blank"><img src="image/my_photo_mini.jpg" alt="Abderrahmen MCHAYAA photo" title="Suis-je une bonne personne"/></a></p>
+		<h2>Profil</h2>
+		<!-- l'attributs class est utilisé pour destingué une balise aux autres dans le fichier css-->
+		<!-- la balise span est utilisé pour sélectionner une partie du texte dans le fichier css-->
+		<p class="profil">Ingénieur ambitieux et curieux hautement polyvalent possédant <em>trois ans d'expérience </em>dans la conception et l’installation des <em>machines spéciales</em> et l’intégration des <em>robots industriels</em>. En effet, ma formation en <span id="mecatronique">mécatronique</span> et mes stages multidisciplinaires m’ont permis d’avoir les compétences fondamentales à la fabrication des machines industrielles. Les défis technologiques sont ma motivation. </p>
+		<h2>Mon expérience</h2>
+		<ol>
+			<p><img src="image/as2e_logo.png" alt="AS2E_LOGO" class="company_logo" title="Automation Systems & Energy Efficiency"/></p>
+			<li>Ingénieur mécatronique : <span class="company">AS2E</span>, Tunisie</li>
+			<ul>
+				<li>Analyse des cahiers de charges et préparation des offres commerciales pour répondre aux besoins des clients</li>
+				<li>Élaboration des animations pour présenter les solutions techniques aux clients</li>
+				<li>Consultation des fournisseurs et des prestataires pour établir une estimation des coûts de réalisation des nouveaux projets</li>
+			</ul>
+			<div class="clear_floating"></div>
+			<p><img src="image/xpertmeca_logo.png" alt="XPERT-MECA_LOGO" class="company_logo" title="XPERT-MECA"/></p>	
+			<li>Ingénieur conception mécanique: <span class="company">XPERT-MECA</span>, Tunisie</li>
+			<ul>
+				<li>Élaboré et validé des dossiers techniques pour la fabrication</li>
+				<li> Assemblé et met en service des machines spéciales et des cellules robotisées de soudure, de test et d’assemblage des produits pour l’automobile, l’agroalimentaire et les produits de sécurité</li>
+				<li>Optimisé l’efficacité de travail par la création des macros SOLIDWORKS qui a automatisé diverses tâches répétitives</li>
+			</ul>
+			<div class="clear_floating"></div>	
+		</ol>
+		<h2 id="skills">Mes compétences</h2>
+		<ol>
+			<li>Langages de Programmation: VBA, HTML5, CSS3, JavaScript, PHP, SQL</li>
+			<li>Outils informatiques: Microsoft Office, Adobe Illustrator, GIMP, Wondershare Filmora9</li>
+			<li>Logiciels mécaniques:SOLIDWORKS, PTC Creo, Coppelia Sim(Simulation Robotique)</li>
+		</ol>
+		<h2>Mes formations</h2>
+		<ul>
+			<li> 2014-2017: Diplôme d’ingénieur en mécatronique<br/>Ecole National d'Ingénieurs de Sousse (ENISo)-Tunisie</li>
+			<li>2012-2013: Études préparatoires aux études d’ingénieurs<br/>Institut Préparatoire aux Études d'Ingénieurs El Manar (IPEIEM)-Tunisie</li>
+			<li>2012: Baccalauréat Technique<br/>Lycée Houmet Souk- Djerba - Tunisie</li>
+		</ul>
+		<p>Voici mes traits dominants selon le site <a href="https://www.monkey-tie.com" target="_blank" title="site_link">Monkey tie</a></p>
+
+			<!--insérer une figure pour indiquer des images qui illustre des textes. la balise figcaption permet d'ajouter une légende  à l'image-->
+
+		<figure>
+		    <img src="image/mes_traits.png" alt="Traits de Abderrahmen MCHAYAA"/>
+		    <figcaption>Mes traits dominants</figcaption>
+		</figure>
+		<h3>Informations</h3>
+		<p class="info">27, Célébataire<br/>
+		Cité Olympique, Tunisie<br/>
+		tel:<span class="mobile"> 93 02 73 66</span><br/>
+		mail : <a href="mailto:abderrahmen.mchayaa@gmail.com">abderrahmen.mchayaa@gmail.com</a></p>
+		<h2> Voulez-vous télécharger mon <a href="source/abderrahmen_mchayaa_cv.pdf" title="file_link">CV</a> ?</h2> <!--a link to download a file -->
+		<h2> <a href="mailto:abderrahmen.mchayaa@gmail.com">Contactez moi!</a><h2> <!-- to send an email via the mailing app -->
+    </body>
+</html>

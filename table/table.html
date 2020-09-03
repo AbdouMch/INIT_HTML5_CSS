@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- indique que c'est une page web HTMl5-->
+<html>
+    <head> <!-- Donne des infos générales sur la page-->
+        <meta charset="utf-8" /><!-- indique la façon d'encodage du text. Comment s'affiche les caractères spéciaux-->
+        <link rel="stylesheet" href="style.css" /> <!-- lier le fichier CSS à cette page HTML -->
+        <title>Table</title><!-- C'est le titre de la page il s'affiche dans l'onglet du navigateur-->
+    </head>
+
+    <body>
+    	<h2>Tableau simple</h2>
+		<table>
+			<caption>Passage du vol 377</caption><!-- table caption -->
+			<tr> <!-- table header with th-->
+				<th>Nom</th>
+				<th>Age</th>
+				<th>Pays</th>
+			</tr>
+			<tr><!-- table row with tr-->
+				<td>Anes</td><!-- table column with td-->
+				<td>26 ans</td>
+				<td>Tunisie</td>
+			</tr>
+			<tr>
+				<td>Hamza</td>
+				<td>10 ans</td>
+				<td>Tunisie</td>
+			</tr>
+		</table>
+
+		<h2>Tableau structuré</h2>
+
+		<table>
+			<caption>Passage du vol 378</caption><!-- table caption -->
+			<thead>
+				<tr> <!-- table header with thead and th-->
+					<th>Nom</th>
+					<th>Age</th>
+					<th>Pays</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr> <!-- table footer with tfoot and th-->
+					<th>Nom</th>
+					<th>Age</th>
+					<th>Pays</th>
+				</tr>
+			</tfoot>
+			<tr><!-- table row with tr-->
+				<td>Anes</td><!-- table column with td-->
+				<td>26 ans</td>
+				<td>Tunisie</td>
+			</tr>
+			<tr><!-- table row with tr-->
+				<td>Anes</td><!-- table column with td-->
+				<td>26 ans</td>
+				<td>Tunisie</td>
+			</tr>
+			<tr><!-- table row with tr-->
+				<td>Anes</td><!-- table column with td-->
+				<td>26 ans</td>
+				<td>Tunisie</td>
+			</tr>
+			<tr>
+				<td>Hamza</td>
+				<td>10 ans</td>
+				<td>Tunisie</td>
+			</tr>
+			<tr>
+				<td>Hamza</td>
+				<td>10 ans</td>
+				<td>Tunisie</td>
+			</tr>
+			<tr>
+				<td>Hamza</td>
+				<td>10 ans</td>
+				<td>Tunisie</td>
+			</tr>
+		</table>
+
+		<h2>Fusion des colonnes</h2>
+		<table>
+			<tr>
+				<th>Nom de film</th>
+				<th>Pour adolescents</th>
+				<th>Pour enfants</th>
+			</tr>
+			<tr>
+				<td>Kung Fu Panda</td>
+				<td>Non violent</td>
+				<td>Dessins animés</td>
+			</tr>
+			<tr>
+				<td>Saw</td>
+				<td>Trop violent</td>
+				<td>Adapté</td>
+			</tr>
+			<tr>
+				<td>Wonder</td>
+				<td colspan="2">Pour toute la famille</td><!-- merge of two celles in the same row by 2 celles-->
+			</tr>
+		</table>
+		<h2>Fusion des lignes</h2>
+		<table>
+			<tr>
+				<th>Nom de film</th>
+				<td>Kung Fu Panda</td>
+				<td>Saw</td>
+				<td>Wonder</td>
+			</tr>
+			<tr>
+				<th>Pour adolescents</th>
+				<td>Dessin animé</td>
+				<td>Adapté</td>
+				<td rowspan="2">Pour toute la famille</td><!-- merge of two celles in the column by 2 celles-->
+			</tr>
+			<tr>
+				<th>Pour enfants</th>
+				<td>Adapté</td>
+				<td>Trop violent</td>
+			</tr>
+		</table>
+    </body>
+</html>

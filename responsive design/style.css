@@ -1,0 +1,15 @@
+p
+{
+	color: blue;
+	font-size: 1.2em;
+	text-align: justify;
+}
+/*change the style when the window width is les than 1024px for all screen*/
+@media screen and (max-width: 1024px)
+{
+	p{
+		color: red;
+		font-size: 2em;
+		text-align: justify;
+	}
+}

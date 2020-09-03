@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- indique que c'est une page web HTMl5-->
+<html>
+    <head> <!-- Donne des infos générales sur la page-->
+        <meta charset="utf-8" /><!-- indique la façon d'encodage du text. Comment s'affiche les caractères spéciaux-->
+        <link rel="stylesheet" href="style.css" /> <!-- lier le fichier CSS à cette page HTML -->
+        <title>Form</title><!-- C'est le titre de la page il s'affiche dans l'onglet du navigateur-->
+    </head>
+
+    <body>
+    	<p>Paragraphe avant le formulaire</p>
+    	<form method="post" action="formulaire.php"> <!--method is the way that the written information will be send
+    													action is the program or the page that is responsible for the treatment of the informations-->
+<!-- input is for a monoline information. like names etc. the attribute name is used to tell the from any input the data is been transfered-->
+		<p>
+			<label for="nickname">Your nickname</label> : <input type="text" name="nickname" id="nickname"
+			 placeholder="Ex : AbdouM" maxlength="10" />
+			<br/>
+			<label for="pwd">Your password</label> : <input type="password" name="pwd" id="pwd" />
+			<br/>
+			<label for="age">Quel âge avez vous?</label> : <input type="number" name="age" id="age" min="18" max="50" step="1" />
+			<br/>
+			<label for="birth_date">Date de naissance</label> : <input type="date" name="birth_date" id="birth_date" />
+			<br/>
+			<label for="comm">Que pensez-vous de mon CV?</label> :<br/>
+			<textarea name="comm" id="comm" cols="60" rows="3"> C'est magnifique. Je pense que vous êtes très expérimenté.</textarea>
+			<br/>
+			<label for="email">Restons en contact!</label> : <input type="email" name="email" id="email" />
+			<br/>
+			<label for="favorit_site">Donne nous votre site favorit</label> : <input type="url" name="favorit_site" id="favorit_site" />
+			<br/>
+			<label for="satisfaction">Que pensez-vous de mon CV en % ?</label><br/> <input type="range" name="satisfaction" id="satisfaction" />
+			<br/>
+			<label for="favorite_color">C'est quoi votre couleur préféré?</label><br/>
+			<input type="color" name="favorite_color" id="favorite_color" />
+			</p>
+			<!-- checkbox list-->
+			<p>Quels sont vos aliments préférés?<br/>
+			<input type="checkbox" name="frite" id="frite"> <label for="frite">Frite</label><br/>
+			<input type="checkbox" name="steak" id="steak"> <label for="steak">Steak</label><br/>
+			<input type="checkbox" name="couscous" id="couscous" checked=""> <label for="couscous">Couscous</label><br/>
+			</p>
+			<!--radio list-->
+			<p>Veillez indiquez votre tranche d'âge<br/>
+				<input type="radio" name="age_range" value="less15" id="less15" /> <label>Moins 15 ans</label> <br/>
+				<input type="radio" name="age_range" value="between15_25" id="between15_25" /> <label>Entre 15 et 25 ans</label><br/>
+				<input type="radio" name="age_range" value="between25_40" id="between25_40" /> <label>Entre 25 et 40</label><br/>
+				<input type="radio" name="age_range" value="more40" id="more40" /> <label>Encore plus vieux que ça!</label><br/>
+			</p>
+			<!-- selection list -->
+			<p>
+				<label for="country">Dans qu'elle pays habitez-vous?</label><br/>
+				<select name="country" id="country">
+					<option value="Omane">Omane</option>
+					<option value="Tunisie" selected="">Tunisie</option>
+					<option value="UK">United Kingdom</option>
+					<option value="KSA">Kingdom of Saudi Arabia</option>
+					<option value="Algeria">Algerie</option>
+				</select>
+			</p>
+			<!--Selection list by category-->
+			<p>
+				<label for="pays">Dans quel pays habitez-vous ?</label><br />
+				<select name="pays" id="pays">
+					<optgroup label="Afrique">
+						<option value="Marroc">Marroc</option>
+						<option value="Tunisie" selected="">Tunisie</option>
+						<option value="Algerie">Algerie</option>
+					</optgroup>
+					<optgroup label="Europe">
+						<option value="france">France</option>
+						<option value="espagne">Espagne</option>
+						<option value="italie">Italie</option>
+						<option value="royaume-uni">Royaume-Uni</option>
+					</optgroup>
+					<optgroup label="Amérique">
+						<option value="canada">Canada</option>
+						<option value="etats-unis">Etats-Unis</option>
+					</optgroup>
+					<optgroup label="Asie">
+						<option value="chine">Chine</option>
+						<option value="japon">Japon</option>
+					</optgroup>
+				</select>
+			</p>
+			<!-- Group by section-->
+			<fieldset>
+		       <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+
+		       <label for="nom">Quel est votre nom ?</label>
+		       <input type="text" name="nom" id="nom" autofocus="" required />
+
+		       <label for="prenom">Quel est votre prénom ?</label>
+		       <input type="text" name="prenom" id="prenom" required />
+		 
+		       <label for="email">Quel est votre e-mail ?</label>
+		       <input type="email" name="email" id="email" required />
+
+		   </fieldset>
+		 
+		   <fieldset>
+		       <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+		 
+		       <p>
+		           Faites un souhait que vous voudriez voir exaucé :
+
+		           <input type="radio" name="souhait" value="riche" id="riche" /> <label for="riche">Etre riche</label>
+		           <input type="radio" name="souhait" value="celebre" id="celebre" /> <label for="celebre">Etre célèbre</label>
+		           <input type="radio" name="souhait" value="intelligent" id="intelligent" /> <label for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+		           <input type="radio" name="souhait" value="autre" id="autre" /> <label for="autre">Autre...</label>
+		       </p>
+		 
+		       <p>
+		           <label for="precisions">Si "Autre", veuillez préciser :</label>
+		           <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+		       </p>
+		   </fieldset>
+		   <p>
+		   	<input type="submit" value="Envoyer" />
+		   </p>
+    	</form>
+    	
+    </body>
+</html>

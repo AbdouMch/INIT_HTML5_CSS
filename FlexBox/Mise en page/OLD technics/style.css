@@ -1,0 +1,55 @@
+/* positionnement par float et margin*/
+
+/*section
+{
+	border: 1px solid blue;
+	margin-left: 170px;
+}
+nav
+{
+	float: left;
+	width: 150px;
+	border: 1px solid black;
+}
+*/
+
+
+/* positionnement par bloc inline-block*/
+/*
+section
+{
+	display: inline-block;
+	border: 1px solid blue;
+	vertical-align: top;
+}
+nav
+{
+	display: inline-block;
+	width: 150px;
+	border: 1px solid black;
+	vertical-align: top;
+}
+*/
+
+/*Positionnement absolu relatif et fixe.*/
+
+section
+{
+	position: absolute;
+	border: 1px solid blue;
+	background-color: blue;
+	z-index: 1;
+}
+nav
+{
+	position: absolute; /*absolute : par rapport au coins en haut à gauche de bloc qui lui contien. 
+	relative par rapport la position actuel de l'element fixe reste fixe meme si en défile la page */
+	width: 150px;
+	border: 1px solid black;
+	top: 120px;
+	left: 0px;
+	background-color: red;
+	z-index: 2;/* position au dessus des autres elements */
+}
+
+

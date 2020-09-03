@@ -1,0 +1,33 @@
+body
+{
+	width: 900px;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+}
+header
+{
+	width: 900px;
+	background-color: yellow;
+}
+section
+{
+	width: 900px;
+	background-color: blue;
+	display: flex;
+	
+}
+article
+{
+	width: 70%;
+	background-color: grey;
+}
+aside
+{
+	background-color: orange;
+}
+footer
+{
+	width: 900px;
+	background-color: green;
+}

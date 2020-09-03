@@ -1,0 +1,147 @@
+/*Définir une fonte qui peut n'exiter pas sur l'ordinateur du visiteur. la fonte se trouve dans un dossier font*/
+/*Downloaded from https://www.fontsquirrel.com WOFF - Recommended, works in all modern browsers*/
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*sélecteur universel pour sélectionner toutes les balises*/
+* /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'robotoregular', Arial, sans-serif; /*indiquer au navigateur de choisir par ordre. Si une n'existe pas il 
+    													choisira la suivante.*/
+}
+
+/*toutes les balises h2 vont être affichées par les paramètres entre les acolades.
+		 On utilise "," pour appliquer le style à +ieurs balise*/
+h1, h2 
+{
+    color: blue;/* la couleur du text de balise sera en bleu*/
+}
+
+p em
+{
+	color: #9C55D4;
+	font-weight: bold;
+}
+.profil /*pour un class*/
+{
+	color: blue;
+	/*background-color: #E6F4FA;/* défénir la couleur du fond en hexadécimal*/
+	background-color: rgba(230, 244, 250);/*défénir la couleur du fond en RGB avec  canal alpha degré d'opacité 1->0*/
+	/*------------- opacité de tout l'élément ---------------------*/
+	/*opacity: 0.5; /*définir l'opacité de tout l'élément*/
+	border: 3px rgb(230, 244, 250) solid; /*bordure*/
+	border-radius: 10px;/*ajoiut des arrondis au bordure*/
+
+}
+#mecatronique /*pour un id*/
+{
+	color: green;
+}
+li .company /*pour sélectionner un élément dans une autre. sélectionner id=company dans tous li*/
+{
+	color: red;
+	font-weight: bold;
+}
+/*pour sélectionner une balise qui se trouve directement après une autre balise. 
+sélectionner le premier paragraphe après h3 */
+h3 + p 
+{
+	font-weight: bold;
+}
+/*sélectionner une balise avec l'attribut entre crochet*. On ajoute ="xxx" pour les attributs "xxx".
+Si on veut sélectionner les attributs qui contiennent "xxx" on utilise attribut*="xxx" */
+a[title="site_link"] 
+{
+	font-weight: bold;
+	font-style: initial;
+}
+a[title*="link"]
+{
+	color: rgb(46, 126, 50);/*couleur en RGB*/
+	text-decoration: none; /* décoration du text : underline, line-through, blink, none, overline*/
+}
+
+/*-------------- taille du texte -------------------*/
+/*on utilise font-size : 1.4(px,cm,mm) (méthode absolue non recommandée), ou xx-smalll to medium to xx-large, ou 1.5em,
+ ou 30%ex (méthode relative recommandée) */
+p
+{
+	font-size: 1em;
+	text-align: justify; /*justifier le texte sur la page*/
+}
+li:hover
+{
+	border: 1px rgb(116, 81, 235) solid;
+	border-radius: 10px;
+}
+h1
+{
+	font-size: 1.5em;
+	font-style: italic;/* changer le style du texte normal, oblique, italic, initial, inherit*/
+	text-align: center; /*alignement du text : left, right, center, justify */
+	text-shadow: 5px 5px 5px black; /*ombre du texte*/ 
+}
+h2
+{
+	font-size: 1.25em;
+}
+h3
+{
+	font-size: 1.1em;
+	color: #7451EB; /*changer le couleur en hexadécimal*/
+}
+.company_logo
+{
+	float: right; /*pour mettre une image flottante autour du texte: left, right*/
+}
+.clear_floating
+{
+	clear: both;/*Appliqué sur le texte dans notre cas. pour enlever l'option flottante d' une image autour du texte: left (si elle est right) ,
+				 right(inversement), both (le texte sera continué au dessous de l'image*/
+}
+body 
+{
+	
+	/* --------------- façon détaillée -------------------*/
+	/*background-image: url("image/background.jpg"); /*changer le fond de la page par une image*/
+	/*background-attachment: fixed; /* Le fond restera fixe ne se déroule pas avec le curseur : fixed, scroll (par défaut)*/
+	/*background-repeat: repeat; /*répétition de l'image : no-repeat, repeat-x, repeat-y, repeat*/
+	/*background-position: center;*/
+
+	/* ----------------- combiner les params. L'ordre n'a pas d'importance ----------------------------------*/
+	/*background: url("image/background.jpg") fixed repeat;
+
+	/*---------------- combiner plusieurs images --------------------*/
+	background: url("image/am_logo.png") scroll no-repeat top right, url("image/background.jpg") fixed repeat;
+	/*L'ordre des images a d'importance*/
+}
+a[title="file_link"]:hover /*appliquer ces paramètre lorsque le curseur passe au dessus l'élément*/
+{
+	text-decoration: underline;
+	color: red;
+}
+h2:active/*appliquer ces paramètre lorsque le visiteur click sur l'élément*/
+{
+	background-color: rgba(0, 172, 185,0.5);
+	border-radius: 5px / 10px; /*bordure avec des congés éleptique*/
+}
+.info a:focus/*appliquer ces paramètre lorsque l'élément est séléctionné*/
+{
+	color: black;
+	border-left: 2px inset #7451EB; 
+    border-bottom: 2px inset #7451EB;
+    box-shadow: 6px 6px 10px #7451EB;/*ombre de la boite , on eut ajouter un 5 eme param inset pour mettre l'ombre en interieur*/
+}
+a[title="site_link"]:visited
+{
+	text-decoration: overline;
+}
